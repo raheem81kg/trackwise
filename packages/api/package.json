@@ -1,0 +1,24 @@
+{
+	"name": "@trackwise/api",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts",
+		"./*": "./src/*.ts"
+	},
+	"scripts": {
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@trackwise/auth": "workspace:*",
+		"@trackwise/db": "workspace:*",
+		"@trpc/client": "catalog:",
+		"@trpc/server": "catalog:",
+		"@types/pg": "^8.23.1",
+		"drizzle-orm": "catalog:",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@trackwise/config": "workspace:*",
+		"typescript": "catalog:"
+	}
+}

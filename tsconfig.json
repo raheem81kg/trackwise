@@ -1,0 +1,3 @@
+{
+	"extends": "@trackwise/config/tsconfig.base.json"
+}
